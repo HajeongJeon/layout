@@ -1,0 +1,305 @@
+<!doctype html>
+<html>
+<head>
+ <meta charset="utf-8">
+ <title>layout1</title>
+ <style>
+	* {margin:0; padding:0;}
+	li {list-style:none;}
+	img {display:block; text-decoration:none;}
+	body {width:1500px; margin:0 auto;}
+
+/* top_btn */        
+	.top_btn { 
+        position: fixed; bottom: 20px; right: 20px;
+        width: 40px; height: 40px;
+        text-align: center;
+        z-index: 999; 
+        }
+
+/* header */
+	#header {
+		width:1500px; 
+		margin:0 auto;
+		background-color:white;
+		position:relative;
+		}			   
+	.ovflw {overflow:hidden;}			   
+	.logo {
+		width:150px;
+		height:150px;
+		float:left;
+		}		
+	.nav_search {
+		width:770px; height:200px;
+		float:right;
+		margin-right:10px;
+		background-color:white;
+		}
+	.gnb_bar {overflow:hidden;}				
+	.gnb {
+		overflow:hidden;
+		width:400px; float:right;
+		padding:10px;
+		}				
+	.gnb li {
+		width:100px; height:30px;
+		text-align:center; line-height:30px;
+		float:left;
+		}
+			
+	.gnb li:hover {color:#ff6f73}	
+			
+	.search_bar {
+		overflow:hidden;
+		margin-top:10px;
+		}
+									
+	#keyword {
+		width:300px; height:30px;
+		text-align:center; line-height:30px;
+		float:right;
+		border:1px solid black; box-sizing:border-box;
+		position:relative;
+		margin-right:10px;
+		}
+			
+			
+/* lnb */
+	.lnb_bar {margin:10px 0; border-bottom:1px solid linen;}
+	.lnb:after {
+		display:block;
+		clear:both;
+		}			
+	.lnb li {
+		width:299px; height:50px;
+		text-align:center; line-height:50px;
+		float:left;
+		background-color:white; color:black;
+		cursor:pointer;
+		}
+	.lnb li li {display:none;}	
+	.lnb li:hover li {display:block;}
+	.lnb li:hover {color:#ff6f73;}
+	.lnb li li:hover {color: lightgray;}		
+
+/* visual main */	
+	.visual_main{
+		width:950px; height: 420px;
+		margin-left:25px;
+		margin:30px auto 0 auto;
+		background-image: url(img/visual.jpg)}
+	.visual_main:hover{
+		width:950px; height: 420px;
+		margin-left:25px;
+		margin:30px auto 0 auto;
+		background-image: url(img/visual2.jpg)
+		}
+						
+/* event */
+	.event {
+		overflow:hidden;
+		margin-top: 30px;
+    padding:0 0 100px 0;
+		}	
+
+	.eve{
+		width:300px; height:300px;
+		float:left;
+		/* border:1px solid black; */ 
+		box-sizing:border-box;
+		cursor:pointer;
+		}
+	.eve01 {margin-left: 25px;}
+	.eve02 {margin:0 25px;} 				
+
+/* aside */
+	.wrap {float:left; width:1000px; margin-right:20px;}
+
+	.asd {padding:5px; overflow:hidden;}
+	.asd01, .asd02, .asd03 {padding : 20px;}
+	
+			
+	
+					
+	.footer{
+		width:1500px; margin:0 auto;
+		background-color:lightgray;
+		overflow:hidden;
+		padding:20px;
+		text-align: center;
+		}
+
+</style>
+</head>
+
+
+
+
+
+
+<body>
+<!-- top btn -->
+    <div class="top_btn"><a href="#" style="color:red;">TOP</a></div>
+
+
+<!-- header --->
+<header id="header">
+ <section class="ovflw">
+       <div class="logo">
+  		  <a href="layout1.html"><img src="img/logo.png"></a>
+	   </div>
+       
+       
+       <div class="nav_search">
+         <nav class="gnb_bar">
+         <ul class="gnb">
+        	<li>login</li>
+            <li>join</li>
+            <li>hosting</li>
+            <li>help</li>
+             </ul>
+             </nav>
+       
+       <div class="search_bar">
+     		<div class="box">
+            <input type="text" id="keyword" placeholder="search">
+             </div>
+       </div>
+    </div>
+    </section>
+    
+ 
+	<nav class="lnb_bar">
+    	<ul class="lnb">
+				<li> LODGING
+                 	<ul>
+                    	<li> menu01_1 </li>
+                        <li> menu01_2 </li>
+                        <li> menu01_3 </li>
+                     </ul>
+                  </li>  
+                  
+			<li> TRIP
+                 	<ul>
+                    	<li> menu02_1 </li>
+                        <li> menu02_2 </li>
+                        <li> menu02_3 </li>
+                     </ul>
+                  </li>  
+ 			<li> REVIEW
+                 	<ul>
+                    	<li> menu03_1 </li>
+                        <li> menu03_2 </li>
+                        <li> menu03_3 </li>
+                     </ul>
+                  </li>  
+			<li> RESTAURANT
+                 	<ul>
+                    	<li> menu04_1 </li>
+                    	<li> menu04_2 </li>
+                        <li> menu04_3 </li>
+                     </ul>
+                  </li>  
+                  
+			<li> TICKET
+                 	<ul>
+                    	<li> menu05_1 </li>
+                        <li> menu05_2 </li>
+                    	<li> menu05_3 </li>
+                     </ul>
+                  </li>                       
+     
+     </ul>
+     </nav>
+</header>
+
+
+
+<div class="wrap">
+			
+			<section class="event">
+			<br>
+			<div style="text-align:center; margin:0 auto;">
+			<h3>기억에 남을 독특한 숙소</h3>
+			<h5>이색적인 숙소에 머무르며 색다른 경험을 해보세요.</h5>
+			</div>
+			<br>
+				<div class="eve eve01">
+					<img src="img/airbnb_01.PNG" width="300px" height="300px">
+					<br>
+					<p>
+					<h4>나무 위에서 보내는 하룻밤</h4>
+					<small>세상에 단 하나뿐인 트리하우스에 머무르며 여행의 신세계를 경험해 보세요</small></p>
+				</div>
+				<div class="eve eve02">
+					<img src="img/airbnb_02.PNG" width="300px" height="300px">
+					<br>
+					<p>
+					<h4>물 위에서 보내는 하룻밤</h4>
+					<small>다양한 모양과 크기의 보트에서 머물며 모험가의 발자취를 따라가 보세요</small></p>
+				</div>
+				<div class="eve eve03">
+					<img src="img/airbnb_03.PNG" width="300px" height="300px">
+					<br>
+					<p>
+					<h4>글램핑을 위한 숙소</h4>
+					<small>캠핑도 스타일 있게! 대자연 속에서도 안락함을 즐겨보세요.</small></p>
+				</div>
+			</section>
+
+<div class="visual_main">
+		
+</div>
+</div>
+
+
+
+
+<aisde class="asd">
+	<div class="asd asd01">
+		<div style="text-algn:center; margin:0 auto;" >
+		 <p><h4>인기 트립</h4>
+		 <small>현재 가장 인기있는 트립을 확인하고, <br>현지인과 함께하는 트립을 예약하세요!</small></p>
+		</div>
+		<br>
+		<div width="300" height="300">
+		 <div style="text-algn:center; margin:0 auto;" >
+		  <p><h5>파도에 몸을 맡겨보세요</h5>
+		  <small style="color:#ff6f73">100개 이상의 서핑트립</small></p>
+		 </div><br>
+		 <img src="img/asd01.jpg" width="200" height="200">
+		</div>          
+    </div>
+    <div class="asd asd02">
+		<div width="300" height="300">
+		<div style="text-algn:center; margin:0 auto;" >
+		  <p><h5>에어비앤비 콘서트</h5>
+		  <small style="color:#ff6f73">60개 이상의 콘서트</small></p>
+		 </div><br>
+		<img src="img/asd02.jpg" width="200" height="200">
+		</div>
+    </div>
+    <div class="asd asd03">
+		<div width="300" height="300">
+		<div style="text-algn:center; margin:0 auto;" >
+		  <p><h5>착한 트립</h5>
+		  <small><span style="color:#ff6f73">200개 이상의 트립</span>
+			<br>여행을 하며 뜻깊은 일에 동참해보세요</small>
+		  </p>
+		 </div><br>
+		 <img src="img/asd03.jpg" width="200" height="200">
+		</div>
+    </div>
+</aside>
+
+
+<br>
+<br>
+
+<footer class="footer">
+FOOTER
+</footer>
+
+</body>
+</html>

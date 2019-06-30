@@ -1,0 +1,246 @@
+<!doctype html>
+<html>
+<head>
+ <meta charset="utf-8">
+ <title>layout2</title>
+ <style>
+	* {margin:0; padding:0;}
+	li {list-style:none;}
+	img {display:block; text-decoration:none;}
+	body {width:1500px; margin:0 auto;}
+
+/* top_btn */        
+	.top_btn { 
+        position: fixed; bottom: 20px; right: 20px;
+        width: 40px; height: 40px;
+        text-align: center;
+        z-index: 999; 
+        }
+
+/* header */
+	#header {
+		width:1500px; 
+		margin:0 auto;
+		background-color:white;
+		position:relative;
+		}			   
+	.ovflw {overflow:hidden;}			   
+	.logo {
+		width:150px;
+		height:150px;
+		float:left;
+		}		
+	.nav_search {
+		width:770px; height:200px;
+		float:right;
+		margin-right:10px;
+		background-color:white;
+		}
+	.gnb_bar {overflow:hidden;}				
+	.gnb {
+		overflow:hidden;
+		width:400px; float:right;
+		padding:10px;
+		}				
+	.gnb li {
+		width:100px; height:30px;
+		text-align:center; line-height:30px;
+		float:left;
+		}
+			
+	.gnb li:hover {color:#ff6f73}	
+			
+	.search_bar {
+		overflow:hidden;
+		margin-top:10px;
+		}
+									
+	#keyword {
+		width:300px; height:30px;
+		text-align:center; line-height:30px;
+		float:right;
+		border:1px solid black; box-sizing:border-box;
+		position:relative;
+		margin-right:10px;
+		}
+			
+			
+/* lnb */
+	.lnb_bar {margin:10px 0; border-bottom:1px solid linen;}
+	.lnb:after {
+		display:block;
+		clear:both;
+		}			
+	.lnb li {
+		width:299px; height:50px;
+		text-align:center; line-height:50px;
+		float:left;
+		background-color:white; color:black;
+		cursor:pointer;
+		}
+	.lnb li li {display:none;}	
+	.lnb li:hover li {display:block;}
+	.lnb li:hover {color:#ff6f73;}
+	.lnb li li:hover {color: lightgray;}		
+
+/* visual main */	
+	.visual_main{
+		width:950px; height: 420px;
+		margin-left:25px;
+		margin:30px auto 0 auto;
+		background-image: url(img/visual.jpg)}
+	.visual_main:hover{
+		width:950px; height: 420px;
+		margin-left:25px;
+		margin:30px auto 0 auto;
+		background-image: url(img/visual2.jpg)
+		}
+						
+/* event */
+	.event {
+		margin: 0 auto;
+    padding:0 0 100px 0;
+		}	
+	input {display: inline-block;}
+	input:focus {
+				background-color:lightgray;}	
+
+/* aside */
+	.wrap {float:left; width:1000px; margin:50px 20px 0 0;}
+
+	.asd {padding:5px; overflow:hidden;}
+	.asd01, .asd02, .asd03 {padding : 20px;}
+	
+			
+	
+					
+	.footer{
+		width:1500px; margin:0 auto;
+		background-color:lightgray;
+		overflow:hidden;
+		padding:20px;
+		text-align: center;
+		}
+
+</style>
+</head>
+
+
+
+
+
+
+<body>
+<!-- top btn -->
+    <div class="top_btn"><a href="#" style="color:red;">TOP</a></div>
+
+
+<!-- header --->
+<header id="header">
+ <section class="ovflw">
+       <div class="logo">
+  		  <a href="layout1.html"><img src="img/logo.png"></a>
+	   </div>
+       
+       
+       <div class="nav_search">
+         <nav class="gnb_bar">
+         <ul class="gnb">
+        	<li>login</li>
+            <li>join</li>
+            <li>hosting</li>
+            <li>help</li>
+             </ul>
+             </nav>
+       
+       <div class="search_bar">
+     		<div class="box">
+            <input type="text" id="keyword" placeholder="search">
+             </div>
+       </div>
+    </div>
+    </section>
+    
+ 
+	<nav class="lnb_bar">
+    	<ul class="lnb">
+				<li> LODGING
+                 	<ul>
+                    	<li> menu01_1 </li>
+                        <li> menu01_2 </li>
+                        <li> menu01_3 </li>
+                     </ul>
+                  </li>  
+                  
+			<li> TRIP
+                 	<ul>
+                    	<li> menu02_1 </li>
+                        <li> menu02_2 </li>
+                        <li> menu02_3 </li>
+                     </ul>
+                  </li>  
+ 			<li> REVIEW
+                 	<ul>
+                    	<li> menu03_1 </li>
+                        <li> menu03_2 </li>
+                        <li> menu03_3 </li>
+                     </ul>
+                  </li>  
+			<li> RESTAURANT
+                 	<ul>
+                    	<li> menu04_1 </li>
+                    	<li> menu04_2 </li>
+                        <li> menu04_3 </li>
+                     </ul>
+                  </li>  
+                  
+			<li> TICKET
+                 	<ul>
+                    	<li> menu05_1 </li>
+                        <li> menu05_2 </li>
+                    	<li> menu05_3 </li>
+                     </ul>
+                  </li>                       
+     
+     </ul>
+     </nav>
+</header>
+
+
+
+<div class="wrap">
+			
+			<section class="event">
+				<h3><a href="" style="color:cadetblue; text-decoration: none">페이스북</a> 또는 <a href="" style="color:cadetblue; text-decoration: none;">구글</a>로 회원가입하세요</h3>
+				<hr><br>
+				<form method="post" action=""> 
+				 이름 : <input type="text" type="firstname" placeholder="이름(예:길동)"><br><br>
+				 성 : <input type="text" type="lastname" placeholder="성(예:홍)"><br><br>
+				 비밀번호 : <input type="password" type="password" placeholder="비밀번호 설정"><br><br>
+				 이메일 : <input type="email" type="email" placeholder="이메일 주소"><br><br>
+				 성별 : 
+			   <input type="radio" name="gender" id="male" value="male"><label for="male">Male</label>
+				 <input type="radio" name="gender" id="female" value="female"><label for="female">Female</label>
+				 
+				 <br><br>
+				  <p>회원 가입을 하시려면 만 18세 이상이어야 합니다. 생일은 다른 회원에게는 공개되지 않습니다.</p>
+				 생일 : <input type="" type="birthmonth" placeholder="월(예:01)" maxlength="2"> <input type="" type="birthdate" placeholder="일(예:01)" maxlength="2"> <input type="" type="birthyear" placeholder="년" maxlength="4">
+				 <br><br>
+				 <input type="submit" value="제출" style="color:#ff6f73;"> <input type="reset" value="다시 작성">
+				</form>
+			</section>
+
+
+</div>
+
+
+
+<br>
+<br>
+
+<footer class="footer">
+FOOTER
+</footer>
+
+</body>
+</html>
